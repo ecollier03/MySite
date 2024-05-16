@@ -36,3 +36,104 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background: #fff;
+  color: #444;
+}
+
+.container {
+  max-width: 600px;
+  margin: 6rem auto 4rem;
+  padding: 0 10px;
+}
+
+.heading {
+  font-size: 23px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.accordion {
+  list-style: none;
+}
+
+.accordion_item.active {
+  .button { 
+    background-color: #105057;
+  }
+}
+.answer_wrapper.open { 
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.answer_wrapper { 
+  background-color: lightgrey;
+  overflow: hidden;
+  transition: height ease 0.2s;
+  transition: padding ease 0.1s;
+  padding: 0px;
+}
+ul{ 
+  text-align: center;
+}
+a {
+  flex: 1;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+a:link,
+a:visited,
+a:focus {
+  color: black;
+}
+a:hover {
+  background: orange;
+}
+a:active {
+  background: darkred;
+  color: white;
+}
+
+.button {
+  font-size: 16px;
+  background-color: #008593;
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8px;
+  cursor: pointer;
+  border: none;
+}
+.button:hover { 
+  background-color: #105057;
+}
+
+.control {
+  font-size: 20px;
+}
+
+.answer {
+  background-color: gray;
+  padding: 20px;
+}
+
+h1 { 
+  text-align: center;
+  font-weight: bolder;
+}

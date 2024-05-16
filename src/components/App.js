@@ -1,10 +1,12 @@
-import logo from '../svg/logo.svg';
 import '../css/App.css';
+import Accordion from './Accordion';
+import Header from "./Header";
 
 function App() {
   return (
     <div className="container">
-      Header and Accordion here
+      <Header />
+      <Accordion />
     </div>
   )
 }
