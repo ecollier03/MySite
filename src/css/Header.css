@@ -1,0 +1,7 @@
+.web-title { 
+    text-align: left;
+    -webkit-text-fill-color: black;
+    font-weight: bolder;
+    font-size: 60px;
+    padding: 1%;
+}

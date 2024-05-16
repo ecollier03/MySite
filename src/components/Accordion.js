@@ -1,6 +1,8 @@
 import { faqs } from "../data/AccordionData";
 import { useState } from "react";
 import { useRef } from "react";
+import "../css/Accordion.css"
+
 
 function Accordion() {
 
@@ -29,8 +31,8 @@ function AccordionItem({ faq, onToggle, active}) {
   return (
     <li className={`accordion_item ${active ? "active" : ""}`}>
       <button className="button" onClick={onToggle}>
-        {faq.question}
-      <span className="control">{active ? "-" : "+"}</span>
+        <span className="text">{faq.question}</span>
+        <span className="control">{active ? "-" : "+"}</span>
       </button>
       <ul 
         className={`answer_wrapper ${active ? "open" : ""}`}
@@ -41,7 +43,7 @@ function AccordionItem({ faq, onToggle, active}) {
             : {padding: "0px", height: "0px"}}
       >
           {faq.answer.map(item =>
-              <div key={item.text}>
+              <div className="answer-content"key={item.text}>
                 {item && item.link ? (
                   <a href = {item.link}>{item.text}</a>
                 ) : (
