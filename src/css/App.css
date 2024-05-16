@@ -64,6 +64,10 @@ body {
 
 .accordion {
   list-style: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .accordion_item.active {
@@ -119,6 +123,7 @@ a:active {
   padding: 18px 8px;
   cursor: pointer;
   border: none;
+  text-align: center;
 }
 .button:hover { 
   background-color: #105057;
