@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
 import reportWebVitals from './reportWebVitals';
-import Accordion from './components/Accordion.js';
-import Header from './components/Header.js';
+import './css/index.css';
+import App from './components/App.js'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <Accordion />
+    <App />
   </React.StrictMode>
 );
 

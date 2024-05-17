@@ -3,15 +3,15 @@ export const faqs = [
       question: "My Links",
       answer: [
           {        
-          text: "My GitHub",
+          text: "GitHub",
           link: "https://github.com/ecollier03"
           },
           {        
-            text: "My linkedin",
+            text: "Linkedin",
             link: "https://www.linkedin.com/in/ecollier03/"
           },
           {        
-            text: "My Instagram",
+            text: "Instagram",
             link: "https://www.linkedin.com/in/ecollier03/"
           },
       ]

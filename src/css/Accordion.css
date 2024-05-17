@@ -13,6 +13,33 @@
   }
 }
 
+.toggleButton { 
+  font-size: 16px;
+  background-color: #008593;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3%;
+  padding-top: 5px;
+}
+
+.accordionButtons {
+  background-color: lightgrey;
+  overflow: hidden;
+  transition: height ease 0.2s;
+  transition: padding ease 0.1s;
+  flex-direction: column;
+  padding: 0px;
+} 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -43,13 +70,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  line-height: 1.4;
-  background: #fff;
-  color: #444;
-}
-
 .container {
   max-width: 600px;
   margin: 6rem auto 4rem;
@@ -70,23 +90,22 @@ body {
   width: 100%;
 }
 
-.accordion_item.active {
+/* .accordion_item.active {
   .button { 
     background-color: #105057;
   }
-}
+} */
 .answer_wrapper.open { 
   background-color: lightgrey;
-  padding: 10px;
+  padding: 5px;
 }
 
 .answer_wrapper { 
   background-color: lightgrey;
   overflow: hidden;
-  transition: height ease 0.2s;
-  transition: padding ease 0.1s;
   flex-direction: column;
-  padding: 0px;
+  overflow: hidden;
+  transition: height ease 0.2s;
 }
 
 ul{ 
@@ -113,10 +132,10 @@ a:active {
 
 .button {
   font-size: 16px;
-  background-color: #008593;
-  color: #fff;
-  text-align: left;
-  font-weight: 700;
+  transition: background-position 700ms ease;
+  background: linear-gradient(to right, #008593 50%, #105057 50%);
+  background-position: 0% 0%;
+  background-size: 200% 100%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -126,8 +145,16 @@ a:active {
   cursor: pointer;
   border: none;
   text-align: center;
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+
 }
 .button:hover { 
+  background-position: 100% 0%;
+}
+
+.toggleButton:hover { 
   background-color: #105057;
 }
 .text { 
