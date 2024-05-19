@@ -1,5 +1,6 @@
 .card { 
     transition: background-position 1s ease;
+    position: inherit;
     padding: 10px;
     margin-left: 1%;
     border: 0.1vmin solid;
@@ -7,7 +8,6 @@
     background-position: 0% 0%;
     background-size: 300% 300%;
     cursor: pointer;
-    position: relative ;
     width: 56vmin;
 }
 

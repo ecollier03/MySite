@@ -16,7 +16,7 @@ function Accordion() {
     }
     setClicked(index);
   };
-  
+
   const expandButtonClicked = () => {
     setHeight(height === 0 ? 'auto' : 0); onOpen(-1); setIsRotated(!isRotated)
   };
