@@ -1,14 +1,13 @@
-import React, { useState, useRef } from "react";
-import { contents } from "../data/hoverButtonContent";
+import React, { useState } from "react";
 import "../css/TopBar.css"
 import AnimateHeight from 'react-animate-height'
 
 
-function HoverButton({ buttonText }) {
+function HoverButton({ contents }) {
 
     const [isHovering, setHoverState] = useState(false);
     const [height, setHeight] = useState(0);
-
+    const buttonText = contents.maintext;
 
     const onHover = (hoverState) => {
         hoverState ? console.log("user is in the div") : console.log("user is out of the div");
@@ -17,11 +16,11 @@ function HoverButton({ buttonText }) {
     }
 
     return (
-        <div className="hoverButton" 
+        <div className="hoverButton"
             onMouseEnter={() => onHover(true)}
             onMouseLeave={() => onHover(false)}>
             <button
-                
+
                 className="hoverButtonEntry"
             >
                 {buttonText}
@@ -49,15 +48,19 @@ function HoverButtonContents({ textJson, active }) {
 }
 
 function HoverButtonItem({ textJson }) {
+
+    console.log(textJson.text);
+    console.log(textJson.link ? textJson.link : "no link");
+
     return (
         <li>
-            <button
-                className="hoverButtonItems">
-                {textJson.text}
-            </button>
+            {textJson && textJson.link ? (
+                <a href={textJson.link} target="_blank" rel="noopener noreferrer" className="hoverButtonItems">{textJson.text}</a>
+            ) : (
+                <button className="hoverButtonItems">{textJson.text}</button>
+            )}
         </li>
     );
-
 }
 
 export default HoverButton;

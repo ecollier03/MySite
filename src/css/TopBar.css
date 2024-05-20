@@ -1,9 +1,17 @@
+
 .topBar {
-    height: auto;
     width: 100%;
     background-color: #008593;
-    padding: 5px;
+    font-family: lato;
+    position: fixed;
+    display: inline-flex;
 }
+
+
+.inline { 
+    display: inline-block;
+}
+
 
 .hoverButtonItems, .hoverButtonEntry {
     border: none;
@@ -14,29 +22,41 @@
     transition: height ease 0.2s;
     font-size: 16px;
     transition: background-position 700ms ease;
-    background: linear-gradient(to right, #008593 50%, #105057 50%);
-    background-position: 0% 0%;
-    background-size: 200% 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 8px;
     cursor: pointer;
     border: none;
+    text-decoration: none;
     text-align: center;
-    color: #fff;
+    color: white;
     text-align: left;
     font-weight: 700;
-    width: 100%;
+    width: 100%;    
+}
+.hoverButtonEntry { 
+    background: linear-gradient(#105057 50%, #008593 50%);
+    background-position: 0% 100%;
+    background-size: 100% 205%;
 }
 
-.hoverButtonItems:hover, .hoverButtonEntry:hover { 
+.hoverButtonEntry:hover { 
+    background-position: 0% 0%;
+}
+
+.hoverButtonItems { 
+    background: linear-gradient(to right,  #105057 50%,#008593 50%);
     background-position: 100% 0%;
+    background-size: 205% 100%;
+}
+
+.hoverButtonItems:hover { 
+    background-position: 0% 0%;
 }
 
 .hoverButton {
     list-style: none;
-    position: fixed;
-    width: 10%;
-    height: auto;
+    width: auto;
+    height: 10%;
 }

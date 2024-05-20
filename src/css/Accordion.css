@@ -101,28 +101,28 @@
   flex-direction: column;
   overflow: hidden;
   transition: height ease 0.2s;
-}
+  ul{ 
+    text-align: center;
+  }
+  a {
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  a:link,
+  a:visited,
+  a:focus {
+    color: black;
+  }
+  a:hover {
+    background: orange;
+  }
+  a:active {
+    background: darkred;
+    color: white;
+  }
 
-ul{ 
-  text-align: center;
-}
-a {
-  flex: 1;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-}
-a:link,
-a:visited,
-a:focus {
-  color: black;
-}
-a:hover {
-  background: orange;
-}
-a:active {
-  background: darkred;
-  color: white;
 }
 
 .button {
