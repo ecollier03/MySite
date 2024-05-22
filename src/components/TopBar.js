@@ -10,21 +10,18 @@ function TopBar() {
 
     useEffect(() => { // make sure the top bar can fit the number of hoverbuttons
         setHeight(ref.current.scrollHeight);
-        console.log(`client height: ${height}`);
     }, [height]);
 
     return (
-        <div className="topBar" style={{height: height}}>
-                <h3 className="topBarName"> Ethan Collier</h3>
-            {
-            contents.map((content) => (
-                <span className="inline" ref={ref}>
-                <HoverButton contents={content} />
-            </span>
-            ))
+        <div className="topBar" style={{ height: height }}>
+            <h3 className="topBarName">Ethan<br/>Collier</h3>
+            { /* the hover buttons */
+                contents.map((content) => (
+                    <span className="inline" ref={ref}>
+                        <HoverButton contents={content} />
+                    </span>
+                ))
             }
-            
-
         </div>
     );
 };

@@ -1,16 +1,18 @@
 .card { 
-    transition: background-position 1s ease;
-    position: inherit;
+    transition: background-color 1s ease, color 1s ease-in-out;
     padding: 10px;
     margin-left: 1%;
-    border: 0.1vmin solid;
-    background: linear-gradient(135deg, rgba(209, 107, 165, 0.8) 0%, rgba(134, 168, 231, 0.8) 66%, rgba(95, 251, 241, 0.8) 100%);
-    background-position: 0% 0%;
-    background-size: 300% 300%;
+    background-color: black;
     cursor: pointer;
     width: 56vmin;
+    color: white;
+    font-family: 'Georgia', sans-serif;
+    justify-content: center;
+   
 }
 
 .card:hover { 
-    background-position: 100% 100%;
+    background-color: white;
+    color: black;
 }
+

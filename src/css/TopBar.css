@@ -3,13 +3,16 @@
     width: 100%;
     background-color: #008593;
     font-family: lato;
-    position: fixed;
-    display: inline-flex;
+    display: flex;
+    position: relative;
 }
 
-
-.inline { 
-    display: inline-block;
+.topBarName { 
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 

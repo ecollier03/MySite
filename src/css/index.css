@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(238,174,237);
-  background: radial-gradient(circle, rgba(238,174,237,1) 0%, rgba(233,148,167,1) 100%);
+  /* background-color: #1c1f1f; */
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/2036232456091119246/D22165AD4E0168A028961E896094020059FFA4AD/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+  /* background-size: cover; */
 }
 
 code {
@@ -14,5 +15,8 @@ code {
     monospace;
 }
 
+text { 
+  color: white;
+}
 
 

@@ -30,5 +30,13 @@ export const contents = [
         text: "asdf"
       }
     ]
+  },
+  {
+    maintext: "3",
+    content: [
+      {
+        text: "GitHub",
+      }
+    ]
   }
 ];

@@ -20,10 +20,10 @@ export const faqs = [
       question: "Contact Me",
       answer: [
           {        
-          text: "My Email: ethanwaynecollier@gmail.com"
+          text: "Email: ethanwaynecollier@gmail.com"
           },
           {        
-            text: "My Phone: 801-300-0993"
+            text: "Phone: 801-300-0993"
           },
       ]
     },
@@ -31,8 +31,8 @@ export const faqs = [
       question: "Photography",
       answer: [
         {        
-        text: "My",
-        link: "https://github.com/ecollier03"
+        text: "Photography Instagram",
+        link: "http://google.com"
         },
       ]
     } 
